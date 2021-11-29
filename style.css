@@ -36,7 +36,7 @@ body, button, input {
         display: none;
     }
 
-    .wrapperLicenseAllMobile {
+    .wrapperSertificatesLicensePageMob {
         display: none;
     }
 
@@ -60,6 +60,10 @@ body, button, input {
         display: none;
     }
 
+    #jsModal .modal__container img {
+        margin-top: 0;
+    }
+
     #sliderServices {
         width: 100%;
     }
@@ -72,11 +76,7 @@ body, button, input {
         font-size: 1em;
     }
 
-    #dots-conServices {
-        display: none;
-    }
-
-    #dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth {
+    .dots-conServices {
         display: none;
     }
 
@@ -90,14 +90,6 @@ body, button, input {
 
     .controlsServicesMobile {
         font-size: 1em;
-    }
-
-    #dots-conServicesMobile {
-        display: none;
-    }
-
-    #dots-conServicesMobileSecond, #dots-conServicesMobileThird, #dots-conServicesMobileFourth, #dots-conServicesMobileFifth {
-        display: none;
     }
 
     #sliderPublic {
@@ -181,8 +173,8 @@ body, button, input {
     }
 
     .wrapperPhoneSocialsHeader .wrapperSocialsHeader a {
-        margin-right: 1em;
-        margin-left: 0;
+        margin-right: 0;
+        margin-left: 1em;
     }
 
     .wrapperPhoneSocialsHeader .wrapperSocialsHeader {
@@ -220,6 +212,7 @@ body, button, input {
 
     .wraperHeaderMain .wrapperLogo img {
         margin-right: 1.5em;
+        max-width: 211px;
     }
 
     #footer .container .wrapperFooter .wrapperNavigation ul {
@@ -267,14 +260,6 @@ body, button, input {
     .descriptionServices .wrapperDescriptionServices p, .descriptionServices .wrapperDescriptionServices ul li {
         font-size: 16px;
         line-height: 24px;
-    }
-
-    .descriptionServices .wrapperBtnServicesSendMessage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
 
     .contactsPageItem .itemContactPage a, .contactsPageItem .itemContactPage p {
@@ -346,6 +331,11 @@ body, button, input {
         flex-direction: row;
     }
 
+    .itemColumnSliderServices p {
+        font-size: 16px;
+        max-width: 330px;
+    }
+
     .wrapperLogoNavigation .wrapperNavigation {
         text-align: center;
     }
@@ -366,6 +356,7 @@ body, button, input {
     .formBlockLeft {
         width: 35%;
     }
+
     .wrapperAboutItemAllMobile {
         display: none;
     }
@@ -411,7 +402,14 @@ body, button, input {
         margin-top: 0;
     }
 
-    .descriptionServices #sliderServicesFifthItem {
+    .wrapperProjectServices .wrapperProjectServices__wrapperInfoZemleustr {
+        padding: 1em;
+        font-size: 24px;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .descriptionServices #sliderServicesFifthItem, .wrapperExpertizaProjects #sliderServicesEleven {
         display: none;
     }
 
@@ -461,13 +459,18 @@ body, button, input {
         margin-top: 3em;
     }
 
-    .wrapperProjectServices .wrapperBlockServicesSimpleProjects, .accordion-content .wrapperBlockServicesSimpleProjects {
+    .wrapperProjectServices .wrapperBlockServicesSimpleProjects, .accordion-content .wrapperBlockServicesSimpleProjects, #fourthservice .wrapperBlockServicesSimpleProjects {
         display: flex;
     }
+
 
     .wrapperContactsPageItems .contactsPageItem {
         padding-right: 1.5em;
         text-align: left;
+    }
+
+    #thirdservice .wrapperProjectServices h2 {
+        font-size: 24px;
     }
 
     .contactsBlockPage .container h1 {
@@ -507,7 +510,7 @@ body, button, input {
         flex-wrap: wrap;
     }
 
-    .wrapperKadastrServicesStadies .wrapperKadastrServicesStadies__listWorks {
+    .wrapperKadastrServicesStadies .wrapperKadastrServicesStadies__listWorks, .wrapperExpertizaProjects .wrapperKadastrServicesStadies__listWorks {
         display: flex;
         flex-wrap: wrap;
     }
@@ -530,7 +533,16 @@ body, button, input {
     .wrapperServicesItems #videoItemDescriptionBlock {
         display: flex;
     }
-    
+
+    .wrapperServicesItems .videoServicesItem img {
+        width: 50%;
+    }
+
+    .videoServicesItem__description {
+        width: 45%;
+        padding: 0 2em;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -548,14 +560,6 @@ body, button, input {
 
     .aboutItem .aboutItemTop {
         flex-direction: row;
-    }
-
-    .wrapperServicesItems .videoServicesItem img {
-        width: 50%;
-    }
-    .videoServicesItem__description {
-        width: 45%;
-        padding: 0 2em;
     }
 
     body #mainBlock {
@@ -591,6 +595,7 @@ body, button, input {
 }
 
 @media (min-width: 1200px) {
+
     .container {
         width: 1100px;
     }
@@ -638,6 +643,7 @@ body, button, input {
 
     header .container .wraperHeaderMain .wrapperContactsHeader {
         justify-content: flex-end;
+        align-items: flex-start;
     }
 
     #footer .container .wrapperFooter .wrapperContactsHeader {
@@ -658,7 +664,8 @@ body, button, input {
     }
 
     #footer .wrapperFooter .wrapperPhoneSocialsHeader {
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
     .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices img, .slideServices .aboutItemSliderServices .wrapperColumnsSliderServices .itemColumnSliderServices p {
@@ -674,6 +681,11 @@ body, button, input {
 
     .wrapperBtnPublic .wrapperPublicationsPageLeftContent button {
         max-width: 40em;
+    }
+
+
+    .wrapperLogoNavigation .wrapperNavigation {
+        margin-right: 2em;
     }
 }
 
@@ -1022,7 +1034,7 @@ header {
 }
 
 .wrapperAddressHeader {
-    max-width: 10em;
+    max-width: 13em;
     margin-left: 2em;
     font-size: 12px;
     text-align: right;
@@ -1135,15 +1147,15 @@ header {
     }
 }
 
-#left-arrow {
+.left {
     margin-right: 5px;
 }
 
-#right-arrow {
+.right {
     margin-left: 5px;
 }
 
-#dots-conServices {
+.dots-conServices {
     display: none;
 }
 
@@ -1163,11 +1175,11 @@ header {
     transition: 0.3s;
 }
 
-#left-arrow {
+.left {
     left: 10px;
 }
 
-#right-arrow {
+.right {
     right: 10px;
 }
 
@@ -1220,14 +1232,6 @@ header {
     }
 }
 
-#left-arrowPublic {
-    margin-right: 5px;
-}
-
-#right-arrowPublic {
-    margin-left: 5px;
-}
-
 .controlsPublic {
     transform: translateY(-50%);
     background: inherit;
@@ -1244,13 +1248,6 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowPublic {
-    left: 10px;
-}
-
-#right-arrowPublic {
-    right: 10px;
-}
 
 #dots-conPublic {
     text-align: center;
@@ -1311,19 +1308,11 @@ header {
     }
 }
 
-#left-arrowServices {
+.left {
     margin-right: 5px;
 }
 
-#left-arrowServicesSecond, #left-arrowServicesThird, #left-arrowServicesFourth, #left-arrowServicesFifth {
-    margin-right: 5px;
-}
-
-#right-arrowServices {
-    margin-left: 5px;
-}
-
-#right-arrowServicesSecond, #right-arrowServicesThird, #right-arrowServicesFourth, #right-arrowServicesFifth {
+.right {
     margin-left: 5px;
 }
 
@@ -1343,27 +1332,15 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowServices {
+.left {
     left: 10px;
 }
 
-#left-arrowServicesSecond, #left-arrowServicesThird, #left-arrowServicesFourth, #left-arrowServicesFifth {
-    left: 10px;
-}
-
-#right-arrowServices {
+.right {
     right: 10px;
 }
 
-#right-arrowServicesSecond, #right-arrowServicesThird, #right-arrowServicesFourth, #right-arrowServicesFifth {
-    right: 10px;
-}
-
-#dots-conServices {
-    text-align: center;
-}
-
-#dots-conServicesSecond, #dots-conServicesThird, #dots-conServicesFourth, #dots-conServicesFifth {
+.dots-conServices {
     text-align: center;
 }
 
@@ -1411,14 +1388,6 @@ header {
     }
 }
 
-#left-arrowLicense {
-    margin-right: 5px;
-}
-
-#right-arrowLicense {
-    margin-left: 5px;
-}
-
 .controlsLicense {
     transform: translateY(-50%);
     background: inherit;
@@ -1435,13 +1404,6 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowLicense {
-    left: 10px;
-}
-
-#right-arrowLicense {
-    right: 10px;
-}
 
 #dots-conLicense {
     text-align: center;
@@ -1498,19 +1460,11 @@ header {
     }
 }
 
-#left-arrowServicesMobile {
+.left {
     margin-right: 5px;
 }
 
-#left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
-    margin-right: 5px;
-}
-
-#right-arrowServicesMobile {
-    margin-left: 5px;
-}
-
-#right-arrowServicesMobileSecond, #right-arrowServicesMobileThird, #right-arrowServicesMobileFourth, #right-arrowServicesMobileFifth {
+.right {
     margin-left: 5px;
 }
 
@@ -1530,30 +1484,12 @@ header {
     transition: 0.3s;
 }
 
-#left-arrowServicesMobile {
+.left {
     left: 10px;
 }
 
-#left-arrowServicesMobileSecond, #left-arrowServicesMobileThird, #left-arrowServicesMobileFourth, #left-arrowServicesMobileFifth {
-    left: 10px;
-}
-
-#right-arrowServicesMobile {
+.right {
     right: 10px;
-}
-
-#right-arrowServicesMobileSecond, #right-arrowServicesMobileThird, #right-arrowServicesMobileFourth, #right-arrowServicesMobileFifth {
-    right: 10px;
-}
-
-#dots-conServicesMobile {
-    text-align: center;
-    display: none;
-}
-
-#dots-conServicesMobileSecond, #dots-conServicesMobileThird, #dots-conServicesMobileFourth, #dots-conServicesMobileFifth {
-    text-align: center;
-    display: none;
 }
 
 .dotServicesMobile {
@@ -1817,7 +1753,7 @@ header {
 .wrapperPhoneSocialsHeader {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -2038,7 +1974,6 @@ header {
 
 .itemColumnSliderServices p {
     font-size: 16px;
-    max-width: 330px;
 }
 
 .itemColumnSliderServicesMobile {
@@ -2088,11 +2023,7 @@ header {
 
 .descriptionServices {
     padding-top: 2em;
-    padding-bottom: 3em;
-}
-
-.wrapperBtnServicesSendMessage {
-    display: none;
+    padding-bottom: 2em;
 }
 
 .itemColumnSliderServicesMobile {
@@ -2369,7 +2300,7 @@ header {
 .modal__close {
     position: absolute;
     top: -20px;
-    right: -15px;
+    right: -5px;
     border: none;
     outline: none;
     background: none;
@@ -2397,6 +2328,7 @@ header {
 .modal__container img {
     height: 100%;
     width: inherit;
+    margin-top: 2em;
 }
 
 .servicesSimpleProjects img {
@@ -2418,6 +2350,14 @@ header {
     font-size: 16px;
     margin-top: 1.5em;
     text-align: center;
+}
+
+.wrapperControlsServicesMobileMain {
+    margin-top: 3em;
+}
+
+#sliderServicesMain .aboutItemBottomSlider {
+    padding: 1.2em 0;
 }
 
 .wrapperNavigationServices {
@@ -2588,12 +2528,12 @@ button.accordion.is-open {
     border: 2px solid #20A26A;
 }
 
-#left-arrow:after {
+.left:after {
     content: url('img/sliderLeft.svg');
     margin-bottom: 5px;
 }
 
-#right-arrow:after {
+.right:after {
     content: url('img/slideRight.svg');
     margin-bottom: 5px;
 }
@@ -2692,7 +2632,7 @@ button.accordion.is-open {
     font-size: 16px;
 }
 
-#sliderServicesFifthItem {
+#sliderServicesFifthItem, #sliderServicesEleven {
     display: block;
 }
 
@@ -2706,7 +2646,7 @@ button.accordion.is-open {
 }
 
 .wrapperProjectServices h2 {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .wrapperKadastrServicesStadies__listWorks {
@@ -2751,7 +2691,7 @@ button.accordion.is-open {
 }
 
 #thirdservice h2 {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 #zemleustrWorksServices .servicesSimpleProjects p {
@@ -2768,8 +2708,8 @@ button.accordion.is-open {
 
 .wrapperProjectServices__wrapperInfoZemleustr {
     padding: 1em;
-    font-size: 24px;
-    margin-top: 1.5em;
+    font-size: 14px;
+    margin-top: 1em;
     margin-bottom: 2em;
     font-weight: 500;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
@@ -2792,10 +2732,47 @@ button.accordion.is-open {
     margin-top: 2em;
 }
 
-#sliderServicesNine .singleItemSlider img{
+#sliderServicesNine .singleItemSlider img, #sliderServicesEight .singleItemSlider img, #sliderServicesSixth .singleItemSlider img, #sliderServicesTen .singleItemSlider img {
     width: 100%;
 }
 
 .wrapperProjectServices__projectsZemleustr {
+    margin-top: 2em;
+}
+
+#sliderServicesSeven .singleItemSlider p {
+    font-size: 11px;
+    padding-bottom: 1em;
+}
+
+.wrapperZemledelieServices {
+    padding-top: 2em;
+}
+
+.wrapperZemledelieServices .servicesSimpleProjects p {
+    font-size: 11px;
+}
+
+#zemledelieServicesProjects {
+    margin-bottom: 2em;
+}
+
+#sliderServicesTen .singleItemSlider p {
+    font-size: 11px;
+}
+
+.descriptionServices .wrapperBtnServicesSendMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.descriptionServices__wrapperDescription {
+    margin-top: 2em;
+}
+
+#sliderServicesEleven {
     margin-top: 2em;
 }
